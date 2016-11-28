@@ -44,6 +44,7 @@ function mergeTwoArray(array1, array2){
 console.log(mergeTwoArray(a1, a2)); //[ 1, 2, 3, 29, 5, 6, 9 ]
 ```
 
+
 **Method 3: Use `reduce` function.**
 
 ```js
@@ -57,6 +58,53 @@ var output = array3.reduce(function(prev, current){
 
 console.log(output.sort()); //[ 1, 2, 29, 3, 5, 6, 9 ]
 ```
+
+## Sorting array
+- arr.sort()
+- arr.sort(compareFunction)
+
+```js
+var numbers = [4, 2, 5, 1, 3];
+
+numbers.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(numbers);
+//[ 1, 2, 3, 4, 5 ]
+```
+
+## Sorting array of objects
+```js
+var info = 
+[
+  { skill: 'css', user: [ 'Sue', 'Bill' ], count: 2 },
+  { skill: 'javascript', user: [ 'Chad', 'Bill', 'Sue' ], count: 3 },
+  { skill: 'html', user: [ 'Sue' ], count: 1 } 
+];
+
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key];
+        var y = b[key];
+        return x-y;
+    });
+}
+
+// Result
+[
+  { skill: 'html', user: [ 'Sue' ], count: 1 } 
+  { skill: 'css', user: [ 'Sue', 'Bill' ], count: 2 },
+  { skill: 'javascript', user: [ 'Chad', 'Bill', 'Sue' ], count: 3 },
+];
+
+```
+
+
+
+## References:
+- [Mozilla Developer Network - Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- [Mozilla Developer Network - Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 
 

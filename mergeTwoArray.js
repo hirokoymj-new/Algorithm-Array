@@ -47,3 +47,8 @@ var output = array3.reduce(function(prev, current){
 }, []);
 
 console.log(output.sort()); //[ 1, 2, 29, 3, 5, 6, 9 ]
+
+
+
+// References:
+// [MDN - Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
