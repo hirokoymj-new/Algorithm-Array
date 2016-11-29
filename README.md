@@ -265,6 +265,8 @@ console.log(countName);
 | Function.prototype.call() |
 | Function.prototype.apply()  |
 | Object.prototype  |
+| Math.max()  |
+| Math.min() |
 
 
 
