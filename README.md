@@ -14,7 +14,7 @@
 
 ## Merge two array
 
-**Method 1: Using `concat` function.**
+**Method 1: Using `concat` function.**  `Array.prototype.concat()`
 
 ```js
 var a1 = [2,5,6,9];
@@ -41,7 +41,7 @@ console.log(mergeTwoArray(a1, a2)); //[ 1, 2, 3, 29, 5, 6, 9 ]
 ```
 
 
-**Method 3: Use `reduce` function.**
+**Method 3: Use `reduce` function.**  `Array.prototype.reduce()`
 
 ```js
 var array3 = a1.concat(a2);
@@ -77,7 +77,12 @@ var min = Math.min.apply(null, array); //2
 
 
 ## Finding missing number in Array
-1) Find max value. 2) Find min value. 3) Preparing missing[], 4) while loop, 5) Using indexOf() to search/find a missing value. 6) add a missing value in missing[].
+1. Find max value.
+2. Find min value.
+3. Preparing missing[].
+4. while loop.
+5. Using indexOf() to search/find a missing value. **`Array.prototype.indexOf()`**
+6. Add a missing value in missing[].
 
 ```js
 var array = [5, 2, 6, 1, 3];
@@ -101,8 +106,8 @@ console.log(findMissing(max,min,array)); //[ 4 ]
 ```
 
 ## Sorting array
-- arr.sort()
-- arr.sort(compareFunction)
+- Use sort function in Array. **`Array.prototype.sort()`**
+- Syntax: **`arr.sort(compareFunction)`**
 
 ```js
 var numbers = [4, 2, 5, 1, 3];
@@ -198,7 +203,28 @@ console.log(newArray); //[ 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 ]
 ```
 
 
+## Define Array.min() and Array.max() using prototype
+- Use Object.prototype property. **`Object.prototype`**
+
+
+```js
+Array.prototype.max = function() {
+  return Math.max.apply(null, this);
+};
+
+Array.prototype.min = function() {
+  return Math.min.apply(null, this);
+};
+
+var a = [1,2,3];
+console.log(a.max());
+console.log(a.min());
+```
+
+
 ## Using reduce function
+- **`Array.prototype.reduce()`**
+
 ```js
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
 //{'Alice':2, 'Bob':1, 'Tiff':1, 'Bruce':1}
@@ -228,16 +254,6 @@ var countName = names.reduce(function(obj, current){
 console.log(countName);
 ```
 
-## Define Array.min() and Array.max() using prototype
-```js
-Array.prototype.max = function() {
-  return Math.max.apply(null, this);
-};
-
-Array.prototype.min = function() {
-  return Math.min.apply(null, this);
-};
-```
 
 
 ## References:
@@ -245,6 +261,7 @@ Array.prototype.min = function() {
 - [Mozilla Developer Network - Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Mozilla Developer Network - apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 - [Mozilla Developer Network - concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+- [Mozilla Developer Network - prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 - [W3C - JavaScript Function Invocation](http://www.w3schools.com/js/js_function_invocation.asp)
 - [GitHub Help - Removing a remote](https://help.github.com/articles/removing-a-remote/)
 - [GitHub Help - Adding a remote](https://help.github.com/articles/adding-a-remote/)
