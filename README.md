@@ -254,6 +254,18 @@ var countName = names.reduce(function(obj, current){
 console.log(countName);
 ```
 
+## List of the Methods in this repository.
+
+| Methods                  |
+|--------------------------|
+| Array.prototype.concat() |
+| Array.prototype.reduce() |
+| Array.prototype.indexOf()  |
+| Array.prototype.sort()  |
+| Function.prototype.call() |
+| Function.prototype.apply()  |
+| Object.prototype  |
+
 
 
 ## References:
