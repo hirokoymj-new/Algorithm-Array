@@ -265,6 +265,9 @@ Array.prototype.min = function() {
 - [Mozilla Developer Network - Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Mozilla Developer Network - apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 - [W3C - JavaScript Function Invocation](http://www.w3schools.com/js/js_function_invocation.asp)
+- [GitHub Help - Removing a remote](https://help.github.com/articles/removing-a-remote/)
+- [GitHub Help - Adding a remote](https://help.github.com/articles/adding-a-remote/)
+
 
 
 
