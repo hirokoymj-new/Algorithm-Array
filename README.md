@@ -4,15 +4,12 @@
 1. [Merge two array](#merge-two-array)
 2. [Find min/max number in Array](#find-minmax-number-in-array)
 3. [Finding missing number in Array](#finding-missing-number-in-array)
-4. [Find two numbers that will sum up to a given number](#)
-5. [Sorting array](#sorting-array)
-6. [Sorting array of objects](#sorting-array-of-objects)
-7. [Array - multiply](#array---multiply)
-8. [Array - duplication](#array---duplication)
-9. [Define Array.min(), Array.max() using prototype](#)
-10. [Using reduce function](#using-reduce-function)
-
-
+4. [Sorting array](#sorting-array)
+5. [Sorting array of objects](#sorting-array-of-objects)
+6. [Array - multiply](#array---multiply)
+7. [Array - duplication](#array---duplication)
+8. [Define Array.min(), Array.max() using prototype](#define-arraymin-and-arraymax-using-prototype)
+9. [Using reduce function](#using-reduce-function)
 
 
 ## Merge two array
