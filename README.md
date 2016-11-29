@@ -264,7 +264,7 @@ var countName = names.reduce(function(obj, current){
 console.log(countName);
 ```
 
-## Extending Object's methog using prototype - Array.min(), Array.max()
+## Define Array.min() and Array.max() using prototype
 ```js
 Array.prototype.max = function() {
   return Math.max.apply(null, this);
