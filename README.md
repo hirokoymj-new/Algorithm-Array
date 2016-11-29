@@ -115,47 +115,9 @@ console.log(numbers);
 //[ 1, 2, 3, 4, 5 ]
 ```
 
-### Sorting array of objects
-```js
-var info = 
-[
-  { skill: 'css', user: [ 'Sue', 'Bill' ], count: 2 },
-  { skill: 'javascript', user: [ 'Chad', 'Bill', 'Sue' ], count: 3 },
-  { skill: 'html', user: [ 'Sue' ], count: 1 } 
-];
-
-function sortByKey(array, key) {
-    return array.sort(function(a, b) {
-        var x = a[key];
-        var y = b[key];
-        return x-y;
-    });
-}
-
-// Result
-[
-  { skill: 'html', user: [ 'Sue' ], count: 1 } 
-  { skill: 'css', user: [ 'Sue', 'Bill' ], count: 2 },
-  { skill: 'javascript', user: [ 'Chad', 'Bill', 'Sue' ], count: 3 },
-];
-```
-
-## Sorting array
-- arr.sort()
-- arr.sort(compareFunction)
-
-```js
-var numbers = [4, 2, 5, 1, 3];
-
-numbers.sort(function(a, b) {
-  return a - b;
-});
-
-console.log(numbers);
-//[ 1, 2, 3, 4, 5 ]
-```
-
 ## Sorting array of objects
+- Sorting info object by count with ascending order.
+
 ```js
 var info = 
 [
@@ -171,7 +133,7 @@ function sortByKey(array, key) {
         return x-y;
     });
 }
-
+console.log(sortByKey(info, 'count'));
 // Result
 [
   { skill: 'html', user: [ 'Sue' ], count: 1 } 
@@ -179,6 +141,7 @@ function sortByKey(array, key) {
   { skill: 'javascript', user: [ 'Chad', 'Bill', 'Sue' ], count: 3 },
 ];
 ```
+
 
 
 ## Array - multiply
@@ -209,7 +172,24 @@ console.log(multi(array)); //30
 ```
 
 
+## Array - sum
+- Use reduce function in Array. **`Array.prototype.reduce()`**
+
+
+```js
+var array = [3,5,2];
+var sum = array.reduce(function(prev, current){
+	return prev + current;
+}, 0);
+
+console.log(sum); //10
+```
+
+
 ## Array - duplication
+- Use concat function in Array. **`Array.prototype.concat()`**
+- The concat() method is used to merge two or more arrays.
+
 ```js
 var array = [1,2,3,4,5];
 
@@ -264,6 +244,7 @@ Array.prototype.min = function() {
 - [Mozilla Developer Network - Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 - [Mozilla Developer Network - Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Mozilla Developer Network - apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+- [Mozilla Developer Network - concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 - [W3C - JavaScript Function Invocation](http://www.w3schools.com/js/js_function_invocation.asp)
 - [GitHub Help - Removing a remote](https://help.github.com/articles/removing-a-remote/)
 - [GitHub Help - Adding a remote](https://help.github.com/articles/adding-a-remote/)
