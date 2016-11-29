@@ -57,9 +57,22 @@ console.log(output.sort()); //[ 1, 2, 29, 3, 5, 6, 9 ]
 
 
 ## Find min/max number in Array
+- There is no max/min function in Array so we will try to use Math.max function.
+- Math.max function: **`Math.max(value1, value2, value3)`**.
+- Invoking a Function with a Function Method using `call()` or `apply()`, which are predefined JavaScript **function methods**.
+
+
+| Methods  | Definition                | Syntax                                 |
+|----------|---------------------------|--------------------------------------- |
+| call()   | Function.prototype.call() |function.call(thisArg, arg1, arg2, arg3) |
+| apply()  | Function.prototype.apply()|function.apply(thisArg, array)           |
+
+
+
 ```js
-var max = Math.max.apply(null, array);
-var min = Math.min.apply(null, array);
+var array = [2,5,6,9];
+var max = Math.max.apply(null, array); //9
+var min = Math.min.apply(null, array); //2
 ```
 
 
@@ -85,35 +98,9 @@ function findMissing(max, min, array){
 	return missing;
 }
 console.log(findMissing(max,min,array)); //[ 4 ]
-
-
-
-
-
-### From a unsorted array, check whether there are any two numbers that will sum up to a given number?
-```js
-var array = [6,4,3,2,1,7];
-var num = 9;
-
-function findSumNum(array, num){
-	var result = [];
-
-	array.forEach(function(value, index){
-		array.forEach(function(v, i){
-//double loop
-			if(value != v && (value+v) ==9){
-				result.push(value);
-			}
-		});
-	});
-
-	return result;
-}
-
-console.log(findSumNum(array, 9));
 ```
 
-### Sorting array
+## Sorting array
 - arr.sort()
 - arr.sort(compareFunction)
 
@@ -276,6 +263,10 @@ Array.prototype.min = function() {
 ## References:
 - [Mozilla Developer Network - Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 - [Mozilla Developer Network - Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [Mozilla Developer Network - apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+- [W3C - JavaScript Function Invocation](http://www.w3schools.com/js/js_function_invocation.asp)
+
+
 
 
 
