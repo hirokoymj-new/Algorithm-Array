@@ -236,8 +236,13 @@ console.log(a.min());
 ```
 
 
-## Using reduce function
-- **`Array.prototype.reduce()`**
+## Flatten and convert Array to Object.
+- Use reduce function.
+
+**Syntax**
+> Array.prototype.reduce(callback, initialValue)
+
+> array.reduce(function(accumlator, currentValue, currentIndex)
 
 ```js
 var names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
