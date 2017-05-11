@@ -155,9 +155,9 @@ console.log(sortByKey(info, 'count'));
 ```
 
 
-
 ## Array - multiply
-- Use array.reduce().
+- Use `array.reduce` function.
+
 **Syntax**
 > Array.prototype.reduce(callback, initialValue)
 
