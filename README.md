@@ -189,11 +189,12 @@ console.log(multi(array)); //30
 
 
 ## Array - sum
-- Use reduce function.
+- Use `array.reduce` function.
+
 **Syntax**
 > Array.prototype.reduce(callback, initialValue)
 
->array.reduce(function(accumlator, currentValue, currentIndex)
+> array.reduce(function(accumlator, currentValue, currentIndex)
 
 
 ```js
