@@ -9,7 +9,7 @@
 6. [Array - multiply](#array---multiply)
 7. [Array - duplication](#array---duplication)
 8. [Define Array.min(), Array.max() using prototype](#define-arraymin-and-arraymax-using-prototype)
-9. [Using reduce function](#using-reduce-function)
+9. [Flatten and convert Array to Object](#flatten-and-convert-array-to-object)
 
 
 ## Merge two array
