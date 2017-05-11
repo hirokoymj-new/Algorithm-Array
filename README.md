@@ -275,7 +275,7 @@ console.log(countName);
 ```
 
 ## Difference between reduce() and map() function.
-The reduce() function applies against accumulator and it will be useful to flatten array or transform array to object.
+The reduce() function applies against accumulator and will be use to flatten an array or tranform array to object.
 The map() function applies an Array and makes new array.
 
 
