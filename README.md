@@ -46,7 +46,7 @@ console.log(mergeTwoArray(a1, a2)); //[ 1, 2, 3, 29, 5, 6, 9 ]
 **Syntax**
 >Array.prototype.reduce(callback, initialValue)
 
->array.reduce(function(accumulator, currentValue, currentIndex, arr), initialValue)
+>array.reduce(function(accumulator, currentValue, currentIndex), initialValue)
 
 ```js
 var a1 = [2,5,6,9];
