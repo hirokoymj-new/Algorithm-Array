@@ -42,16 +42,19 @@ console.log(mergeTwoArray(a1, a2)); //[ 1, 2, 3, 29, 5, 6, 9 ]
 
 
 **Method 3: Use `reduce` function.**  `Array.prototype.reduce(callback, initialValue)`
+``
+array.reduce(function(accumulator, currentValue, currentIndex, arr), initialValue)
+``
 
 ```js
 var a1 = [2,5,6,9];
 var a2 = [1,2,3,29];
 var array3 = a1.concat(a2); //[2, 5, 6, 9, 1, 2, 3, 29 ]
-var output = array3.reduce(function(prev, current){
-	if(prev.indexOf(current) == -1 ){
-		prev.push(current);
+var output = array3.reduce(function(accu, val){
+	if(acc.indexOf(val) == -1 ){
+		acc.push(val);
 	}
-	return prev;
+	return acc;
 }, []);
 
 console.log(output.sort()); //[ 1, 2, 29, 3, 5, 6, 9 ]
