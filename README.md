@@ -157,13 +157,17 @@ console.log(sortByKey(info, 'count'));
 
 
 ## Array - multiply
-**Using array.reduce().**
+- Use array.reduce().
+**Syntax**
+> Array.prototype.reduce(callback, initialValue)
+
+>array.reduce(function(accumulator, currentValue, currrentIndex)
 
 ```js
 var array = [3,5,2];
-var multiply = array.reduce(function(a, b){
-	return a*b;
-});
+var multiply = array.reduce(function(acc, val){
+	return acc*val;
+}, 1);
 console.log(multiply); //30
 ```
 
