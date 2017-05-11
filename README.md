@@ -274,20 +274,9 @@ var countName = names.reduce(function(obj, current){
 console.log(countName);
 ```
 
-## List of the Methods in this repository.
-
-| Methods                  |
-|--------------------------|
-| Array.prototype.concat() |
-| Array.prototype.reduce() |
-| Array.prototype.indexOf()  |
-| Array.prototype.sort()  |
-| Function.prototype.call() |
-| Function.prototype.apply()  |
-| Object.prototype  |
-| Math.max()  |
-| Math.min() |
-
+## Difference between reduce() and map() function.
+The reduce() function applies against accumulator and it will be useful to flatten array or transform array to object.
+The map() function applies an Array and makes new array.
 
 
 ## References:
