@@ -12,6 +12,7 @@
 9. [Flatten and convert Array to Object](#flatten-and-convert-array-to-object)
 
 
+
 ## Merge two array
 
 **Method 1: Using `concat` function.**  `Array.prototype.concat()`
@@ -279,12 +280,49 @@ The reduce() function applies against accumulator and will be use to flatten an 
 The map() function applies an Array and makes new array.
 
 
+## Array - reduce
+```js
+var friends = [{
+  name: 'Anna',
+  books: ['Bible', 'Harry Potter'],
+  age: 21
+}, {
+  name: 'Bob',
+  books: ['War and peace', 'Romeo and Juliet'],
+  age: 26
+}, {
+  name: 'Alice',
+  books: ['The Lord of the Rings', 'The Shining'],
+  age: 18
+}];
+
+
+var bookList = friends.reduce(function(acc, value){
+	return acc.concat(value.books);
+}, []);
+
+console.log(bookList);
+/*
+[ 'Bible',
+  'Harry Potter',
+  'War and peace',
+  'Romeo and Juliet',
+  'The Lord of the Rings',
+  'The Shining' ]
+ */
+
+ console.log(bookList.length);
+//6
+
+```
+
 ## References:
 - [Mozilla Developer Network - Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 - [Mozilla Developer Network - Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Mozilla Developer Network - apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 - [Mozilla Developer Network - concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 - [Mozilla Developer Network - prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+
 - [W3C - JavaScript Function Invocation](http://www.w3schools.com/js/js_function_invocation.asp)
 - [GitHub Help - Removing a remote](https://help.github.com/articles/removing-a-remote/)
 - [GitHub Help - Adding a remote](https://help.github.com/articles/adding-a-remote/)
